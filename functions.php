@@ -7,6 +7,8 @@
  * @package TFC_Nathan_Small
  */
 
+
+
 /**
  * Enqueue styles.
  */
@@ -23,6 +25,9 @@ function tfc_nathan_small_enqueue_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'tfc_nathan_small_enqueue_styles' );
 
+/**
+ * Enqueue styles for Gutenberg editor.
+ */
 function tfc_nathan_small_gutenberg_styles() {
     // Load the theme styles within Gutenberg.
     wp_enqueue_style( 'tfc-nathan-small-gutenberg', get_theme_file_uri( 'editor-style.css' ), false, '1.1.0', 'all' );
@@ -78,3 +83,15 @@ function tfc_nathan_small_gutenberg_color_palette() {
     );
 }
 add_action( 'after_setup_theme', 'tfc_nathan_small_gutenberg_color_palette' );
+
+/**
+ * Customizer additions.
+ */
+require get_stylesheet_directory() . '/customizer.php';
+
+/**
+ * Display a blue bar at the very top of the site.
+ */
+function tfc_nathan_small_blue_preheader() {
+    echo '<div id="pre-header" class="blue-bar has-azure-background-color">' . wp_kses_post( get_theme_mod( 'blue_bar', 'Set the content of this section in the theme customizer.' ) ) . '</div>';
+}
