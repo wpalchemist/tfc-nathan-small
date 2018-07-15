@@ -95,3 +95,4 @@ require get_stylesheet_directory() . '/customizer.php';
 function tfc_nathan_small_blue_preheader() {
     echo '<div id="pre-header" class="blue-bar has-azure-background-color">' . wp_kses_post( get_theme_mod( 'blue_bar', 'Set the content of this section in the theme customizer.' ) ) . '</div>';
 }
+
