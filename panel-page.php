@@ -33,7 +33,7 @@ get_header(); ?>
             </div>
 
             <div id="donate-button-wrapper">
-                <a class="button has-cerise-background-color" href="<?php echo esc_url( home_url() . '/donate' ); ?>">
+                <a class="button button-tfc button-lg button-secondary" href="<?php echo esc_url( home_url() . '/donate' ); ?>">
                     <?php _e( 'Donate', 'tfc-nathan-small' ); ?>
                 </a>
             </div>
