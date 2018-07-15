@@ -47,7 +47,7 @@
     background-color: #000000;
 }
 .has-black-color {
-    color: #000000;
+    color: #000306;
 }
 .has-navy-background-color {
     background-color: #021f37;
@@ -67,6 +67,7 @@ body, p {
     font-size: 14px;
     font-weight: 400;
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #000306;
 }
 
 h1, h2, h3, h4, h5, h6, .site-title {
@@ -175,10 +176,12 @@ a.white-link:hover {
 
 /* === Buttons === */
 .button-tfc,
-.button-tfc a
+.button-tfc a,
 li.button-tfc a,
 .main-navigation .button-tfc a,
-.main-navigation .button-tfc.current_page_item > a {
+.main-navigation .button-tfc.current_page_item > a,
+.widget-footer-top-area a.button-tfc,
+input.pushbutton-wide {
     border-radius: 4px;
     font-size: 14px;
     text-transform: none;
@@ -194,7 +197,9 @@ li.button-tfc a,
 .button-tfc a:hover,
 li.button-tfc a:hover,
 .main-navigation .button-tfc a:hover,
-.main-navigation .button-tfc.current_page_item > a:hover  {
+.main-navigation .button-tfc.current_page_item > a:hover, 
+.widget-footer-top-area a.button-tfc:hover,
+input.pushbutton-wide:hover  {
     background-color: #021f37;
     color: #ffffff;
 }
@@ -203,7 +208,8 @@ li.button-tfc a:hover,
 .button-secondary a,
 li.button-secondary a,
 .main-navigation .button-secondary a,
-.main-navigation .button-secondary.current_page_item > a {
+.main-navigation .button-secondary.current_page_item > a,
+.widget-footer-top-area a.button-secondary {
     background-color: #cf3555;
     color: #ffffff;
 }
@@ -212,12 +218,14 @@ li.button-secondary a,
 .button-secondary a:hover,
 li.button-secondary a:hover,
 .main-navigation .button-secondary a:hover,
-.main-navigation .button-secondary.current_page_item > a:hover {
+.main-navigation .button-secondary.current_page_item > a:hover,
+.widget-footer-top-area a.button-secondary:hover {
     background-color: #7c1a09;
     color: #ffffff;
 }
 
-.button-lg {
+.button-lg,
+.widget-footer-top-area a.button-lg {
     font-size: 18px;
     min-width: 132px;
 }
@@ -230,23 +238,56 @@ li.button-secondary a:hover,
     margin-bottom: 0;
 }
 
+/* Allow header image's context box to extend all the way left */
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content {
+    background-color: rgba(2,31,55,0.6);
+    padding: 25px 40px 10px 25px;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.district {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.nathan {
+    font-size: 59px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.work {
+    font-size: 57px;
+    font-weight: 400;
+}
+
 #join-conversation {
     padding: 12px;
 }
 
-#join-conversation h3 {
+#join-conversation h4 {
     display: inline-flex;
     align-items: center;
     color: #ffffff;
     margin-bottom: 0;
 }
 
-#join-conversation h3 a {
-    padding-left: 18px;
+#join-conversation h4 a {
+    padding-left: 20px;
 }
 
-#join-conversation h3 a:first-child {
-    padding-left: 36px;
+#join-conversation h4 a:first-child {
+    padding-left: 46px;
 }
 
 #donate-button-wrapper {
@@ -264,3 +305,187 @@ li.button-secondary a:hover,
     }
 }
 
+
+/* === Front page issues === */
+.home .hentry {
+    padding-top: 40px;
+    padding-bottom: 24px;
+}
+
+.home figure.wp-block-image {
+    margin: 0 auto 18px;
+}
+
+.home .wp-block-image img {
+    max-width: 75px;
+    border-radius: 50%;
+}
+
+.home .wp-block-image a img:hover {
+    background-color: #021f37;
+    border-radius: 50%;
+}
+
+/* Tablet -- hide detail text */
+@media screen and (max-width: 991px) {
+    .home .entry-content .wp-block-column p {
+        display: none;
+    }
+
+    .home .entry-content .wp-block-column h4 {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .home .wp-block-image img {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home .wp-block-image img {
+        max-width: 40px;
+    }
+}
+
+
+/* === Entries === */
+
+/* Offset the padding of the first and last columns */
+.wp-block-columns.has-3-columns {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.wp-block-column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.entry-title {
+    text-transform: uppercase;
+}
+
+h2.entry-title {
+    font-size: 24px;
+    color: #021f37;
+}
+
+.entry-content .wp-block-column h4,
+.entry-content .wp-block-column h4 a {
+    color: #cf3555;
+    margin-bottom: 10px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.entry-content .wp-block-column h4 a:hover {
+    color: #eb3211;
+    text-decoration: none;
+}
+
+.entry-content .wp-block-column p {
+    /*text-align: justify;*/
+}
+
+.wp-block-image a {
+    box-shadow: none;
+}
+
+
+/* === Get Involved widget === */
+.widget-footer-top-area {
+    position: relative;
+}
+
+.widget-footer-top-area .banner-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.get-involved-widget {
+    position: relative;
+    padding-top: 30px;
+    /* add z-index to position above banner image behind it */
+    z-index: 1;
+}
+
+.get-involved-widget h2 {
+    text-transform: uppercase;
+}
+
+.get-involved-widget h4 {
+    font-weight: 400;
+}
+
+.get-involved-widget a:hover {
+    color: #cf3555;
+}
+
+
+/* === Footer === */
+.widget-footer-bottom-area,
+.site-footer {
+    background-color: #0071cf;
+    color: #ffffff;
+}
+
+.widget-footer-bottom-area p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.widget-footer-bottom-area h2.widget-title {
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+.site-footer {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.site-info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-info p,
+.site-info p a,
+.site-info p a:visited {
+    color: #ffffff;
+}
+
+.site-info p a:hover {
+    color: #021f37;
+}
+
+.site-info p.sponsor {
+    border: 2px solid #00aef3;
+    padding: 10px 36px;
+    margin-bottom: 14px;
+    padding-bottom: 0;
+}
+
+/* === Contact form === */
+.contact-form label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.widget-small .contact-form > div {
+    margin-bottom: 0;
+}
+
+/* Contact form styling has transparent background on focus by default; needs to be white */
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, select:focus, textarea:focus {
+    background-color: #ffffff;
+}
+
+/* Default input color is lighter gray and looks like placeholder--make darker*/
+input {
+    color: #000306;
+}
