@@ -62,6 +62,15 @@
     color: #0071cf;
 }
 
+a.white-link {
+    color: #ffffff;
+    text-decoration: underline;
+} 
+
+a.white-link:hover {
+    color: #021f37;
+}
+
 
 /* Navigation menu */
 .site-header-wrapper .custom-logo {
@@ -113,6 +122,12 @@
     .main-navigation a {
         font-size: 14px;
     }
+}
+
+.blue-bar {
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
 }
 
 
