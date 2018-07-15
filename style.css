@@ -47,7 +47,7 @@
     background-color: #000000;
 }
 .has-black-color {
-    color: #000000;
+    color: #000306;
 }
 .has-navy-background-color {
     background-color: #021f37;
@@ -67,6 +67,7 @@ body, p {
     font-size: 14px;
     font-weight: 400;
     font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+    color: #000306;
 }
 
 h1, h2, h3, h4, h5, h6, .site-title {
@@ -175,7 +176,7 @@ a.white-link:hover {
 
 /* === Buttons === */
 .button-tfc,
-.button-tfc a
+.button-tfc a,
 li.button-tfc a,
 .main-navigation .button-tfc a,
 .main-navigation .button-tfc.current_page_item > a {
@@ -230,23 +231,56 @@ li.button-secondary a:hover,
     margin-bottom: 0;
 }
 
+/* Allow header image's context box to extend all the way left */
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper {
+    display: inline-block;
+    width: auto;
+    margin-left: 0;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content {
+    background-color: rgba(2,31,55,0.6);
+    padding: 25px 40px 10px 25px;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p {
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.district {
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.nathan {
+    font-size: 59px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.work {
+    font-size: 57px;
+    font-weight: 400;
+}
+
 #join-conversation {
     padding: 12px;
 }
 
-#join-conversation h3 {
+#join-conversation h4 {
     display: inline-flex;
     align-items: center;
     color: #ffffff;
     margin-bottom: 0;
 }
 
-#join-conversation h3 a {
-    padding-left: 18px;
+#join-conversation h4 a {
+    padding-left: 20px;
 }
 
-#join-conversation h3 a:first-child {
-    padding-left: 36px;
+#join-conversation h4 a:first-child {
+    padding-left: 46px;
 }
 
 #donate-button-wrapper {
@@ -264,3 +298,88 @@ li.button-secondary a:hover,
     }
 }
 
+
+/* === Front page issues === */
+.home .hentry {
+    padding-top: 40px;
+}
+
+.home figure.wp-block-image {
+    margin: 0 auto 18px;
+}
+
+.home .wp-block-image img {
+    max-width: 75px;
+    border-radius: 50%;
+}
+
+.home .wp-block-image a img:hover {
+    background-color: #021f37;
+    border-radius: 50%;
+}
+
+/* Tablet -- hide detail text */
+@media screen and (max-width: 991px) {
+    .home .entry-content .wp-block-column p {
+        display: none;
+    }
+
+    .home .entry-content .wp-block-column h4 {
+        font-size: 14px;
+        margin-bottom: 45px;
+    }
+
+    .home .wp-block-image img {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .home .wp-block-image img {
+        max-width: 40px;
+    }
+}
+
+
+/* === Entries === */
+
+/* Offset the padding of the first and last columns */
+.wp-block-columns.has-3-columns {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.wp-block-column {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.entry-title {
+    text-transform: uppercase;
+}
+
+h2.entry-title {
+    font-size: 24px;
+    color: #021f37;
+}
+
+.entry-content .wp-block-column h4,
+.entry-content .wp-block-column h4 a {
+    color: #cf3555;
+    margin-bottom: 10px;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+.entry-content .wp-block-column h4 a:hover {
+    color: #eb3211;
+    text-decoration: none;
+}
+
+.entry-content .wp-block-column p {
+    /*text-align: justify;*/
+}
+
+.wp-block-image a {
+    box-shadow: none;
+}
