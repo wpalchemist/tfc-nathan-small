@@ -17,7 +17,7 @@
     background-color: #eb3211;
 }
 .has-red-color {
-    background-color: #eb3211;
+    color: #eb3211;
 }
 .has-grey-background-color {
     background-color: #63656a;
@@ -60,4 +60,106 @@
 }
 .has-cerulean-color {
     color: #0071cf;
+}
+
+
+/* Navigation menu */
+.site-header-wrapper .custom-logo {
+    max-height: 70px;
+    width: auto;
+}
+
+.site-header {
+    padding-bottom: 23px;
+}
+
+.site-branding {
+    margin-top: 18px;
+}
+
+.main-navigation a {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.41;
+  letter-spacing: normal;
+  color: #003c7f;
+  text-transform: uppercase;
+}
+
+.main-navigation a:hover {
+    color: #0071cf;
+}
+
+.main-navigation .primary-menu .current_page_item > a,
+.main-navigation .primary-menu .current-menu-item > a,
+.main-navigation .primary-menu .current_page_ancestor > a {
+    color: #eb3211;
+    border-color: transparent;
+}
+
+.main-navigation .primary-menu .current_page_item > a:hover,
+.main-navigation .primary-menu .current-menu-item > a:hover,
+.main-navigation .primary-menu .current_page_ancestor > a:hover {
+    color: #7c1a09;
+}
+
+@media screen and (max-width: 1149px) {
+    .site-header-wrapper .custom-logo {
+        max-height: 45px;
+    }
+
+    .main-navigation a {
+        font-size: 14px;
+    }
+}
+
+
+/* Buttons */
+.button-tfc,
+.button-tfc a
+li.button-tfc a,
+.main-navigation .button-tfc a,
+.main-navigation .button-tfc.current_page_item > a {
+    border-radius: 4px;
+    font-size: 14px;
+    text-transform: none;
+    line-height: unset;
+    padding: 8px 18px;
+    font-weight: normal;
+    background-color: #0071cf;
+    color: #ffffff;
+    min-width: 105px;
+}
+
+.button-tfc:hover,
+.button-tfc a:hover,
+li.button-tfc a:hover,
+.main-navigation .button-tfc a:hover,
+.main-navigation .button-tfc.current_page_item > a:hover  {
+    background-color: #021f37;
+    color: #ffffff;
+}
+
+.button-secondary,
+.button-secondary a,
+li.button-secondary a,
+.main-navigation .button-secondary a,
+.main-navigation .button-secondary.current_page_item > a {
+    background-color: #cf3555;
+    color: #ffffff;
+}
+
+.button-secondary:hover,
+.button-secondary a:hover,
+li.button-secondary a:hover,
+.main-navigation .button-secondary a:hover,
+.main-navigation .button-secondary.current_page_item > a:hover {
+    background-color: #7c1a09;
+    color: #ffffff;
+}
+
+.button-lg {
+    font-size: 18px;
 }
