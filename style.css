@@ -219,6 +219,7 @@ li.button-secondary a:hover,
 
 .button-lg {
     font-size: 18px;
+    min-width: 132px;
 }
 
 
@@ -246,5 +247,20 @@ li.button-secondary a:hover,
 
 #join-conversation h3 a:first-child {
     padding-left: 36px;
+}
+
+#donate-button-wrapper {
+    text-align: right;
+    padding: 0 100px;
+}
+
+#donate-button-wrapper .button-tfc {
+    border-radius: 0 0 4px 4px;
+}
+
+@media screen and (max-width: 767px) {
+    #donate-button-wrapper {
+        padding: 0 30px;
+    }
 }
 
