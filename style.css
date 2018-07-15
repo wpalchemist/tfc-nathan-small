@@ -180,7 +180,8 @@ a.white-link:hover {
 li.button-tfc a,
 .main-navigation .button-tfc a,
 .main-navigation .button-tfc.current_page_item > a,
-.widget-footer-top-area a.button-tfc {
+.widget-footer-top-area a.button-tfc,
+input.pushbutton-wide {
     border-radius: 4px;
     font-size: 14px;
     text-transform: none;
@@ -197,7 +198,8 @@ li.button-tfc a,
 li.button-tfc a:hover,
 .main-navigation .button-tfc a:hover,
 .main-navigation .button-tfc.current_page_item > a:hover, 
-.widget-footer-top-area a.button-tfc:hover {
+.widget-footer-top-area a.button-tfc:hover,
+input.pushbutton-wide:hover  {
     background-color: #021f37;
     color: #ffffff;
 }
@@ -419,4 +421,43 @@ h2.entry-title {
 
 .get-involved-widget a:hover {
     color: #cf3555;
+}
+
+
+/* === Footer === */
+.widget-footer-bottom-area {
+    background-color: #0071cf;
+    color: #ffffff;
+}
+
+.widget-footer-bottom-area p {
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.widget-footer-bottom-area h2.widget-title {
+    font-size: 24px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+/* === Contact form === */
+.contact-form label {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.widget-small .contact-form > div {
+    margin-bottom: 0;
+}
+
+/* Contact form styling has transparent background on focus by default; needs to be white */
+input[type="text"]:focus, input[type="email"]:focus, input[type="url"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="range"]:focus, input[type="date"]:focus, input[type="month"]:focus, input[type="week"]:focus, input[type="time"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="color"]:focus, select:focus, textarea:focus {
+    background-color: #ffffff;
+}
+
+/* Default input color is lighter gray and looks like placeholder--make darker*/
+input {
+    color: #000306;
 }
