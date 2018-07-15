@@ -425,7 +425,8 @@ h2.entry-title {
 
 
 /* === Footer === */
-.widget-footer-bottom-area {
+.widget-footer-bottom-area,
+.site-footer {
     background-color: #0071cf;
     color: #ffffff;
 }
@@ -440,6 +441,33 @@ h2.entry-title {
     font-size: 24px;
     color: #ffffff;
     text-transform: uppercase;
+}
+
+.site-footer {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.site-info {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.site-info p,
+.site-info p a,
+.site-info p a:visited {
+    color: #ffffff;
+}
+
+.site-info p a:hover {
+    color: #021f37;
+}
+
+.site-info p.sponsor {
+    border: 2px solid #00aef3;
+    padding: 10px 36px;
+    margin-bottom: 14px;
+    padding-bottom: 0;
 }
 
 /* === Contact form === */
