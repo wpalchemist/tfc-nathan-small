@@ -332,6 +332,11 @@ a.white-link:hover {
     padding-left: 46px;
 }
 
+#join-conversation .social svg:hover {
+    background-color: #00aef3;
+    border-radius: 50%;
+}
+
 #donate-button-wrapper {
     text-align: right;
     padding: 0 100px;
