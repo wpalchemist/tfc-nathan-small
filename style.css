@@ -440,7 +440,7 @@ h2.entry-title {
     position: relative;
 }
 
-.widget-footer-top-area .banner-img {
+.widget-footer-top-area .widget_media_image .attachment-full.size-full {
     position: absolute;
     left: 0;
     top: 0;
