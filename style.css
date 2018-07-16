@@ -144,6 +144,14 @@ a.white-link:hover {
     color: #0071cf;
 }
 
+.main-navigation .button a {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: unset;
+}
+
 .main-navigation .primary-menu .current_page_item > a,
 .main-navigation .primary-menu .current-menu-item > a,
 .main-navigation .primary-menu .current_page_ancestor > a {
@@ -175,59 +183,92 @@ a.white-link:hover {
 
 
 /* === Buttons === */
-.button-tfc,
-.button-tfc a,
-li.button-tfc a,
-.main-navigation .button-tfc a,
-.main-navigation .button-tfc.current_page_item > a,
-.widget-footer-top-area a.button-tfc,
-input.pushbutton-wide {
+.button,
+.wp-block-button a.wp-block-button__link,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link,
+.widget-footer-top-area .button {
     border-radius: 4px;
-    font-size: 14px;
+    font-size: 18px;
     text-transform: none;
     line-height: unset;
     padding: 8px 18px;
-    font-weight: normal;
-    background-color: #0071cf;
+    font-weight: 600;
+    min-width: 132px;
+    text-transform: uppercase;
     color: #ffffff;
+}
+
+.button-sm {
+    font-size: 14px;
     min-width: 105px;
 }
 
-.button-tfc:hover,
-.button-tfc a:hover,
-li.button-tfc a:hover,
-.main-navigation .button-tfc a:hover,
-.main-navigation .button-tfc.current_page_item > a:hover, 
-.widget-footer-top-area a.button-tfc:hover,
-input.pushbutton-wide:hover  {
-    background-color: #021f37;
-    color: #ffffff;
-}
-
-.button-secondary,
-.button-secondary a,
-li.button-secondary a,
-.main-navigation .button-secondary a,
-.main-navigation .button-secondary.current_page_item > a,
-.widget-footer-top-area a.button-secondary {
+.button.has-cerise-background-color,
+.wp-block-button a.wp-block-button__link.has-cerise-background-color,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerise-background-color,
+.widget-footer-top-area .button.has-cerise-background-color,
+.main-navigation .primary-menu .current_page_item.button.has-cerise-background-color > a,
+.main-navigation .primary-menu .current-menu-item.button.has-cerise-background-color > a,
+.button.has-cerise-background-color:active,
+.wp-block-button a.wp-block-button__link.has-cerise-background-color:active,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerise-background-color:active,
+.widget-footer-top-area .button.has-cerise-background-color:active,
+.main-navigation .primary-menu .current_page_item.button.has-cerise-background-color > a:active,
+.main-navigation .primary-menu .current-menu-item.button.has-cerise-background-color > a:active,
+.button.has-cerise-background-color:visited,
+.wp-block-button a.wp-block-button__link.has-cerise-background-color:visited,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerise-background-color:visited,
+.widget-footer-top-area .button.has-cerise-background-color:visited,
+.main-navigation .primary-menu .current_page_item.button.has-cerise-background-color > a:visited,
+.main-navigation .primary-menu .current-menu-item.button.has-cerise-background-color > a:visited {
+    background: #cf3555;
     background-color: #cf3555;
     color: #ffffff;
 }
 
-.button-secondary:hover,
-.button-secondary a:hover,
-li.button-secondary a:hover,
-.main-navigation .button-secondary a:hover,
-.main-navigation .button-secondary.current_page_item > a:hover,
-.widget-footer-top-area a.button-secondary:hover {
-    background-color: #7c1a09;
+.button.has-cerise-background-color:hover,
+.wp-block-button a.wp-block-button__link.has-cerise-background-color:hover,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerise-background-color:hover,
+.widget-footer-top-area .button.has-cerise-background-color:hover,
+.main-navigation .primary-menu .current_page_item.button.has-cerise-background-color > a:hover,
+.main-navigation .primary-menu .current-menu-item.button.has-cerise-background-color > a:hover {
+    background: #d5526d;
+    background-color: #d5526d;
     color: #ffffff;
 }
 
-.button-lg,
-.widget-footer-top-area a.button-lg {
-    font-size: 18px;
-    min-width: 132px;
+.button.has-cerulean-background-color,
+.wp-block-button a.wp-block-button__link.has-cerulean-background-color,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerulean-background-color,
+.widget-footer-top-area .button.has-cerulean-background-color,
+.main-navigation .primary-menu .current_page_item.button.has-cerulean-background-color > a,
+.main-navigation .primary-menu .current-menu-item.button.has-cerulean-background-color > a,
+.button.has-cerulean-background-color:active,
+.wp-block-button a.wp-block-button__link.has-cerulean-background-color:active,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerulean-background-color:active,
+.widget-footer-top-area .button.has-cerulean-background-color:active,
+.main-navigation .primary-menu .current_page_item.button.has-cerulean-background-color > a:active,
+.main-navigation .primary-menu .current-menu-item.button.has-cerulean-background-color > a:active,
+.button.has-cerulean-background-color:visited,
+.wp-block-button a.wp-block-button__link.has-cerulean-background-color:visited,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerulean-background-color:visited,
+.widget-footer-top-area .button.has-cerulean-background-color:visited,
+.main-navigation .primary-menu .current_page_item.button.has-cerulean-background-color > a:visited,
+.main-navigation .primary-menu .current-menu-item.button.has-cerulean-background-color > a:visited {
+    background: #0071cf;
+    background-color: #0071cf;
+    color: #ffffff;
+}
+
+.button.has-cerulean-background-color:hover,
+.wp-block-button a.wp-block-button__link.has-cerulean-background-color:hover,
+.page-template-panel-page .hentry.has-post-thumbnail a.wp-block-button__link.has-cerulean-background-color:hover,
+.widget-footer-top-area .button.has-cerulean-background-color:hover,
+.main-navigation .primary-menu .current_page_item.button.has-cerulean-background-color > a:hover,
+.main-navigation .primary-menu .current-menu-item.button.has-cerulean-background-color > a:hover {
+    background: #1a85fc;
+    background-color: #1a85fc;
+    color: #ffffff;
 }
 
 
@@ -243,6 +284,7 @@ li.button-secondary a:hover,
     display: inline-block;
     width: auto;
     margin-left: 0;
+    margin-top: 40px;
 }
 
 .page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content {
@@ -295,7 +337,7 @@ li.button-secondary a:hover,
     padding: 0 100px;
 }
 
-#donate-button-wrapper .button-tfc {
+#donate-button-wrapper .button {
     border-radius: 0 0 4px 4px;
 }
 
@@ -467,7 +509,6 @@ h2.entry-title {
     border: 2px solid #00aef3;
     padding: 10px 36px;
     margin-bottom: 14px;
-    padding-bottom: 0;
 }
 
 /* === Contact form === */
