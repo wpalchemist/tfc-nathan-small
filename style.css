@@ -108,6 +108,19 @@ a.white-link:hover {
     color: #021f37;
 }
 
+blockquote.wp-block-quote {
+    padding-left: 0;
+    border: 0;
+    font-style: normal;
+}
+
+blockquote.wp-block-quote p {
+    font-size: 24px;
+    font-weight: 600;
+    color: #cf3555;
+    line-height: 1.4;
+}
+
 
 /* === Helper classes === */
 .text-center {
