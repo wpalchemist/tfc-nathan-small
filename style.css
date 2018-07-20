@@ -105,7 +105,7 @@ a.white-link {
 } 
 
 a.white-link:hover {
-    color: #021f37;
+    color: #003c7f;
 }
 
 blockquote.wp-block-quote {
@@ -125,6 +125,11 @@ blockquote.wp-block-quote p {
 /* === Helper classes === */
 .text-center {
     text-align: center;
+}
+
+/* remove flex from block columns */
+.wp-block-column.no-flex {
+    flex: none;
 }
 
 
@@ -292,7 +297,8 @@ blockquote.wp-block-quote p {
     margin-bottom: 0;
 }
 
-.page-template-panel-page .hentry.has-post-thumbnail:before {
+.page-template-panel-page .hentry.has-post-thumbnail:before,
+.entry-hero:before {
     background-color: rgba(2,31,55,0.6);
 }
 
@@ -363,6 +369,10 @@ blockquote.wp-block-quote p {
     }
 }
 
+.entry-hero, .site-content-wrapper .has-post-thumbnail .entry-header {
+    background-position: 50% 0;
+}
+
 
 /* === Front page issues === */
 .home .hentry {
@@ -423,6 +433,9 @@ blockquote.wp-block-quote p {
 
 
 /* === Entries === */
+.entry-hero-wrapper {
+    text-align: center;
+}
 
 /* Offset the padding of the first and last columns */
 .wp-block-columns.has-3-columns {
@@ -441,7 +454,24 @@ blockquote.wp-block-quote p {
 
 h2.entry-title {
     font-size: 24px;
-    color: #021f37;
+    color: #003c7f;
+}
+
+.entry-content h3 {
+    color: #003c7f;
+    padding-top: 12px;
+    margin-bottom: 12px;
+}
+
+.entry-content
+
+.entry-content a {
+    color: #00aef3;
+}
+
+.entry-content a:hover {
+    color: #0071cf;
+    text-decoration: underline;
 }
 
 .entry-content .wp-block-column h4,
@@ -523,7 +553,7 @@ h2.entry-title {
 
 .site-footer {
     border-top: 0;
-    padding-top: 0;
+    padding-top: 30px;
 }
 
 .site-info {
@@ -538,7 +568,7 @@ h2.entry-title {
 }
 
 .site-info p a:hover {
-    color: #021f37;
+    color: #003c7f;
 }
 
 .site-info p.sponsor {
@@ -550,6 +580,10 @@ h2.entry-title {
 /* === Contact form === */
 .contact-form label {
     font-size: 14px;
+    color: #021f37;
+}
+
+.widget-footer-area .contact-form label {
     color: #ffffff;
 }
 
