@@ -292,38 +292,36 @@ blockquote.wp-block-quote p {
     margin-bottom: 0;
 }
 
-/* Allow header image's context box to extend all the way left */
-.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper {
-    display: inline-block;
-    width: auto;
-    margin-left: 0;
-    margin-top: 40px;
+.page-template-panel-page .hentry.has-post-thumbnail:before {
+    background-color: rgba(2,31,55,0.6);
 }
 
-.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content {
-    background-color: rgba(2,31,55,0.6);
-    padding: 25px 40px 10px 25px;
+.page-template-panel-page .hentry.has-post-thumbnail .entry-content {
+    padding: 150px 30px;
+}
+
+@media screen and (max-width: 767px) {
+    .page-template-panel-page .hentry.has-post-thumbnail .entry-content {
+        padding: 150px 0;
+    }
+}
+
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content h1 {
+    font-size: 72px;
+    margin-bottom: 10px;
 }
 
 .page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p {
+    font-size: 30px;
+    font-weight: 600;
     margin-bottom: 10px;
     line-height: 1;
 }
 
-.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.district {
-    font-size: 36px;
-    font-weight: 700;
-}
-
-.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.nathan {
-    font-size: 59px;
-    font-weight: 700;
+.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.bottom-line {
     color: #ffffff;
-}
-
-.page-template-panel-page .hentry.has-post-thumbnail .hentry-wrapper .entry-content p.work {
-    font-size: 57px;
-    font-weight: 400;
+    margin-bottom: 35px;
+    font-size: 24px;
 }
 
 #join-conversation {
@@ -368,8 +366,8 @@ blockquote.wp-block-quote p {
 
 /* === Front page issues === */
 .home .hentry {
-    padding-top: 40px;
-    padding-bottom: 24px;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 .home figure.wp-block-image {
