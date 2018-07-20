@@ -96,3 +96,14 @@ function tfc_nathan_small_blue_preheader() {
     echo '<div id="pre-header" class="blue-bar has-azure-background-color">' . wp_kses_post( get_theme_mod( 'blue_bar', 'Set the content of this section in the theme customizer.' ) ) . '</div>';
 }
 
+function tfc_nathan_small_footer_cta() {
+    ?>
+    <div id="footer-cta" style="background-image: url('<?php echo esc_url( get_theme_mod( 'cta_background' ) ); ?>;')">
+        <h3><?php echo esc_attr( get_theme_mod( 'cta_header' ) ); ?></h3>
+        <a class="button has-cerise-background-color" href="<?php echo esc_url( get_theme_mod( 'cta_link' ) ); ?>">
+            <?php echo esc_attr( get_theme_mod( 'cta_button_text' ) ); ?>
+        </a>
+        <p><?php echo wp_kses_post( get_theme_mod( 'cta_text', 'Edit this text in the theme customizer' ) ); ?></p>
+    </div>
+    <?php
+}
