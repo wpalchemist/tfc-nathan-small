@@ -380,8 +380,23 @@ blockquote.wp-block-quote p {
 }
 
 .home .wp-block-image a img:hover {
-    background-color: #021f37;
+    background-color: #0071cf;
     border-radius: 50%;
+}
+
+/* Read more link -- center with images */
+.entry-content .wp-block-column p a {
+    font-size: 18px;
+    font-weight: 600;
+    padding: 28px 0;
+    color: #00aef3;
+    display: inline-block;
+    box-shadow: none;
+    text-decoration: underline;
+}
+
+.entry-content .wp-block-column p a:hover {
+    color: #0071cf;
 }
 
 /* Tablet -- hide detail text */
